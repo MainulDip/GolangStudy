@@ -1,3 +1,3 @@
-module helloWorld/main
+module gojumpstart
 
 go 1.17

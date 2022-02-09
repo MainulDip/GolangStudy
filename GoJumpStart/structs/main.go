@@ -8,11 +8,13 @@ import (
 // Define Person Struct
 
 type Person struct {
-	firstName string
-	lastName  string
-	city      string
-	gender    string
-	age       int
+	// firstName string
+	// lastName  string
+	// city      string
+	// gender    string
+	// age       int
+	firstName, lastName, city, gender string
+	age                               int
 
 	// two kinds of method, value recever (calcularion, not change anything)
 	// and pointer recever for changin something.
@@ -30,7 +32,7 @@ func (p *Person) hasBirthday() {
 	p.age++
 }
 
-// getMarried (pointer receiver)
+// getMarried (pointer reciever)
 func (p *Person) getMarried(spouseLastName string) {
 	if p.gender == "Male" {
 		return

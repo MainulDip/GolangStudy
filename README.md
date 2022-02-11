@@ -1,7 +1,7 @@
-## GoLang Jumpstart:
+## GoLang Language Tour:
 personalized overview and instruction for everyday use golang projects and language structure.
 
-### Workspact Setup:
+### Workspace Setup:
 Usually go projects are all seat into one structure.
 ```sh
 mkdir GoProjects
@@ -28,16 +28,12 @@ package main
 
 import "fmt"
 
-// fibonacci is a function that returns
-// a function that returns an int.
+// fibonacci is a function that returns a function, and that function returns an int.
 func fibonacci() func() int {
 
 	prev, curr, i, x := 0, 0, 0, 0
 	f := 0
 	return func() int {
-	// if f == 0 , g := f, f++ return g 
-	// if f == 1 , curr := f, f++ return g
-	// if f > 1 ,  prev = curr curr = prev + curr return prev + current
 	
 	if f <= 1 {
 		curr = f
